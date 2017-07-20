@@ -25,10 +25,13 @@ twitter_username: jasoderstrom20
 github_username:  jasoderstrom
 
 # Build settings
+sass:
+  sass_dir: _sass
 markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+include: ['_pages']
 exclude:
   - Gemfile
   - Gemfile.lock
