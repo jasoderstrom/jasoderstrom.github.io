@@ -1,0 +1,74 @@
+---
+title: Contact Justin
+layout: default
+permalink: /contact
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Contact Me</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div id="welcome-message" class="col-md-12">
+            <h3>This is a direct line to me. I'd love to hear from you! </h3>
+        </div>
+    </div>
+
+    <!-- Hidden message to show if contact is successful. -->
+    <div class="row">
+        <div class="col-md-12">
+             <div id="submit-success" class="alert alert-success alert-dismissible collapse" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    Message received! I'll be in touch.
+            </div>
+        </div>
+    </div>
+    
+    <!-- Hidden message to show if user encounters errors. -->
+    <div class="row">
+        <div class="col-md-12">
+            <div id="submit-errors" class="alert alert-danger alert-dismissible collapse" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                It looks like there was an error submitting the form. Please try again later.
+            </div>
+        </div>
+    </div>
+
+    <form id="contact-form" action="/">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="name">* Name</label>
+                    <input type="text" class="form-control" required name="name" id="name" placeholder="Your name">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="email">* Email</label>
+                    <input type="email" class="form-control" required name="_replyto" id="email" placeholder="email@address.com">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="message">* Message</label>
+                    <textarea class="form-control" rows="5" id="message" required name="message" placeholder="Your message to Justin"></textarea>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-1">
+                <button type="submit" class="btn btn-primary" value="Send">Submit</button>
+            </div>
+            <div class="col-md-1">
+                <button type="reset" class="btn btn-default" value="Reset">Cancel</button>
+            </div>
+        </div>
+    </form> 
+</div>
