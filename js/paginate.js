@@ -5,8 +5,14 @@ var posts = JSON.parse(document.getElementById('posts').innerHTML);
 function PopulatePagePosts(page)
 {
     var index = 5 * (page - 1);
+
+    if (posts.length === 0) {
+        $('[name=1-title]').html("Blog posts coming soon!");
+        $('[name=1-title]').unwrap();
+    }
+
     for (var i = 0; i < 5; i++) {
-        if(index == posts.length)
+        if(index === posts.length)
         {
             break;
         } else {
@@ -26,12 +32,22 @@ function PopulatePagePosts(page)
     }
 }
 
+//Return total pages for pagination. Uses sets of 5
+function TotalPages()
+{
+    if (posts.length === 0) {
+            return 1;
+        } else {
+            return Math.ceil(posts.length / 5)
+    }
+}
+
 //Load first page on document load
 $(document).ready(PopulatePagePosts(1));
 
 //Have to have at least 2 for pagination to begin
 $('#paginator').twbsPagination({
-    totalPages: Math.ceil(posts.length / 5),
+    totalPages: TotalPages(),
     visiblePages: 5,
     onPageClick: function (event, page) {
         PopulatePagePosts(page);

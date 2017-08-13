@@ -3,7 +3,7 @@
         {% for post in site.categories[page.category] %}
             {
                 "title" : "{{ post.title }}",
-                "date" : "{{ post.date | date: '%B %-d %Y' }}",
+                "date" : "{{ post.date | date: '%B %-d, %Y' }}",
                 "description" : "{{ post.description }}",
                 "url" : "{{ post.url }}"
             }

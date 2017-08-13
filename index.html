@@ -12,7 +12,7 @@ page_css: index
         </div>
         <div class="row">
           <div class="col-md-12">
-            <div>I'm a software engineer based in Pierre, South Dakota. I have a passion for developing full-stack applications using a variety of technologies and love to <a href="{{ site.url }}/blog/">write technical tutorials</a> about what I learn in my endeavors. Find out <a href="{{ site.url }}/about/">more about me</a>, check out <a href="{{ site.url }}/work/">my work</a>, or just <a href="{{ site.url }}/contact/">say hi!</a></div>
+            <div>I'm a software engineer based in Pierre, South Dakota. I have a passion for developing full-stack applications using a variety of technologies and am just starting to <a href="{{ '/blog/' | prepend: site.url }}">write technical tutorials</a> about what I learn in my endeavors. Find out <a href="{{ '/about/' | prepend: site.url }}'">more about me</a>, check out <a href="{{ '/work/' | prepend: site.url }}">my work</a>, or just <a href="{{ '/contact/' | prepend: site.url }}">say hi!</a></div>
           </div>
         </div>
     </div>  
@@ -27,17 +27,17 @@ page_css: index
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-4 col-xs-4">
-          <a href="#">
+          <a href="{{ '/blog/c-sharp/' | prepend: site.url }}">
             <img src="/content/c-sharp.png" class="topic-img"></img>
           </a>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
-          <a href="#">
+          <a href="{{ '/blog/dot-net-mvc/' | prepend: site.url }}">
             <img src="/content/dot-net-mvc.png" class="topic-img"></img>
           </a>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
-          <a href="#">
+          <a href="{{ '/blog/visual-studio/' | prepend: site.url }}">
             <img src="/content/visual-studio.png" class="topic-img"></img>
           </a>  
         </div>        
@@ -59,9 +59,11 @@ page_css: index
       </div>
       <div class="row">
         <div class="col-md-12">
-            <a href="{{ site.url }}/contact/" class="btn btn-primary contact-btn"> Contact Me</a>
+            <a href="{{ '/contact/' | prepend: site.url }}" class="btn btn-primary contact-btn"> Contact Me</a>
         </div>
       </div>    
   </div>
 </div>
+</div>
+
 

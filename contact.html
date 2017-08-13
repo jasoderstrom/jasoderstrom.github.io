@@ -1,6 +1,6 @@
 ---
 title: Contact Justin
-layout: default
+layout: contact
 page_css: contact
 permalink: /contact/
 ---
@@ -41,7 +41,7 @@ permalink: /contact/
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label for="name">* Name</label>
+                    <label for="name"><span class="required">*</span> Name</label>
                     <input type="text" class="form-control" required name="name" id="name" placeholder="Your name">
                 </div>
             </div>
@@ -49,7 +49,7 @@ permalink: /contact/
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label for="email">* Email</label>
+                    <label for="email"><span class="required">*</span> Email</label>
                     <input type="email" class="form-control" required name="_replyto" id="email" placeholder="email@address.com">
                 </div>
             </div>
@@ -57,17 +57,17 @@ permalink: /contact/
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label for="message">* Message</label>
+                    <label for="message"><span class="required">*</span> Message</label>
                     <textarea class="form-control" rows="5" id="message" required name="message" placeholder="Your message to Justin"></textarea>
                 </div>
             </div>
         </div>
         <br />
         <div class="row submit">
-            <div class="col-md-1">
+            <div class="col-md-1 col-sm-2 col-xs-3">
                 <button type="submit" class="btn btn-primary" value="Send">Submit</button>
             </div>
-            <div class="col-md-1">
+            <div class="col-md-1 col-sm-2 col-xs-3">
                 <button type="reset" class="btn btn-default" value="Reset">Reset</button>
             </div>
         </div>
