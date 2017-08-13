@@ -15,7 +15,9 @@ function PopulatePagePosts(page)
                 break;
             } else {
                 var htmlLocation = i + 1;
-                $('[name="' + htmlLocation + '"]').html(post.title);
+                $('[name="' + htmlLocation + '-title"]').html(post.title);
+                $('[name="' + htmlLocation + '-date"]').html(post.date);
+                $('[name="' + htmlLocation + '-description"]').html(post.description);
             }
         } 
     }
