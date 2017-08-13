@@ -11,10 +11,13 @@ function PopulatePagePosts(page)
             break;
         } else {
             var post = posts[index + i];
+            var htmlLocation = i + 1;
             if (post == null) {
-                break;
+                $('[name="' + htmlLocation + '-title"]').empty();
+                $('[name="' + htmlLocation + '-date"]').empty();
+                $('[name="' + htmlLocation + '-description"]').empty();
             } else {
-                var htmlLocation = i + 1;
+                $('[name="' + htmlLocation + '-url"]').prop("href", post.url);
                 $('[name="' + htmlLocation + '-title"]').html(post.title);
                 $('[name="' + htmlLocation + '-date"]').html(post.date);
                 $('[name="' + htmlLocation + '-description"]').html(post.description);
