@@ -25,6 +25,7 @@ twitter_username: jasoderstrom20
 github_username:  jasoderstrom
 
 # Build settings
+permalink: /blog/:categories/:title.html
 sass:
   sass_dir: _sass
 markdown: kramdown
