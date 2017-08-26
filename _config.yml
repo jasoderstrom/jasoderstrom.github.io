@@ -18,7 +18,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Justin Soderstrom's website and blog. Contains technical articles and tutorials on a variety of topics as well 
   as Justin's thoughts and ideas. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://justinsoderstrom.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://justinsoderstrom.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jasoderstrom20
 github_username:  jasoderstrom
 
