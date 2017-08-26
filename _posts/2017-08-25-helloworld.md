@@ -2,6 +2,7 @@
 layout: post
 page_css: post
 title: "Hello World!"
+img: thought-bubble.png
 date: 2017-08-25 16:16:01 -0600
 comments: true
 categories: thoughts
