@@ -3,22 +3,24 @@
 {% include head.html %}
     <body>
         {% include navigation.html %}
-        <div class="container post-container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1> {{ page.title }}</h1>
+        <div class="post-container container">
+            <div class="post-head">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1> {{ page.title }}</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <time>{{ page.date | date: '%B %d, %Y' }}</time> {% if page.comments %} | <a href="http://justinsoderstrom.com{{ page.url }}#disquis_thread">0 Comments</a> {% endif %}
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <time>{{ page.date | date: '%B %d, %Y' }}</time>
-                </div>
-            </div>
-            <div class="row">
-                <div class="well well-lg">
+                <div class="well">
                     <div class="row">
                         <div class="col-md-12">
-                            <h2>Goals</h2>
+                            <h3>Goals</h3>
                             <hr />
                         </div>
                     </div>
@@ -31,7 +33,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <h2>Prerequisites</h2>
+                            <h3>Prerequisites</h3>
                             <hr />
                         </div>
                     </div>
@@ -45,10 +47,17 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 post-text">
+                <div class="col-md-12">
                     {{ content }}
                 </div>
             </div>
+            {% if page.comments %}
+            <div class="row">
+                <div class="col-md-12">
+                    {% include disquis.html %}
+                </div>
+            </div>
+            {% endif %}
         </div>
         {% include footer.html %}
         {% include javascript.html %}
