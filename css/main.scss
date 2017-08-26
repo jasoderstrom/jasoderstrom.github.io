@@ -12,7 +12,7 @@ body {
      margin-bottom: 0px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
     .footer {
         height: 400px;
     }
@@ -22,7 +22,7 @@ body {
     }
 }
 
-@media screen and (min-width: 751px) {
+@media screen and (min-width: 1001px) {
     .footer {
         height: 200px;
     }
